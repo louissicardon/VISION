@@ -1,0 +1,131 @@
+$neon-white: #f7fff1;
+$neon-yellow: #f8f824;
+
+.container {
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  
+  .lights {  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 10rem;
+
+    .first-shadow,
+    .second-shadow {
+      display: inline-block;
+      position: relative;
+      
+      .first-light,
+      .second-light {
+        font-size: 2rem;
+        font-weight: 700;
+        width:75px;
+        height:75px;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        color: $neon-white;
+        border: $neon-white 0.125em solid;
+        border-radius:50%;
+        opacity: 0.5;
+        
+        box-shadow: inset 0 0 0.5em 0 $neon-white, 0 0 0.5em 0 $neon-white;
+        position: relative;
+      }
+      
+      .first-light {
+        transform: rotateX(-30deg) rotateY(10deg);
+      }
+      
+      .second-light {
+        transform: rotateX(30deg) rotateY(10deg);
+      }
+    
+    // .first-shadow::before,
+    // .second-shadow::before {
+      //   pointer-events: none;
+      //   content: "";
+      //   position: absolute;
+      //   background: $neon-white;
+      //   top: 40rem;
+      //   left: 1rem;
+      //   width: 650%;
+      //   height: 100%;
+      //   border-radius:50%;
+      //   opacity: 0;
+      
+      //   // transform: perspective(1em) rotateX(40deg) scale(1, 0.20) rotateZ(40deg);
+      //   // filter: blur(1em);
+      // }
+      
+      // .second-shadow::before {
+        //   left: unset;
+        //   right: 10rem;
+        //   // transform: rotate(-7deg) rotateX(75deg);
+        //   filter: blur(20px);
+        // }
+   
+      .first-light::after,
+      .second-light::after {
+        content: "";
+        position: absolute;
+        border-radius:50%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 2em 0.5em $neon-white;
+        opacity: 0;
+        background-color: $neon-white;
+        transition: opacity 100ms linear;
+      }
+      
+      .first-light:hover,
+      .second-light:hover {
+        background-color: $neon-white;
+        color: #000;
+        text-shadow: none;
+        opacity: 1;
+        transition: opacity 500ms linear;
+      }
+        
+        // .shadow-light:hover::before,
+        // .shadow-light:hover::before {
+          //   opacity: 1;
+          // }
+       .first-light:hover::after,
+       .second-light:hover::after {
+        opacity: 1;
+      }
+    }
+
+    .first-shadow::before,
+    .second-shadow::before {
+      content: '';
+      position: absolute;
+      background: $neon-white;
+      top: 40rem;
+      left: 1.5rem;
+      width: 400%;
+      height: 100%;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 500ms linear;
+      
+      transform: perspective(1rem) rotateX(40deg) scale(1, 0.40);
+      filter: blur(1.5rem);
+    }
+
+    .second-shadow::before {
+      left: -13rem;
+    }
+
+    .first-shadow:hover::before,
+    .second-shadow:hover::before {
+      opacity: 1;
+    }
+  }
+}

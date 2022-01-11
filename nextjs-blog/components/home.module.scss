@@ -1,0 +1,159 @@
+$neon-white: rgb(191, 136, 255);
+$neon-white: #f7fff1;
+$neon-yellow: #f8f824;
+
+.container {
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  
+  .navbar {  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 10rem;
+
+    .first-light,
+    .second-light {
+      font-size: 2rem;
+      font-weight: 700;
+      width:75px;
+      height:75px;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      color: $neon-white;
+      border: $neon-white 0.125em solid;
+      border-radius:50%;
+      opacity: 0.5;
+    
+      box-shadow: inset 0 0 0.5em 0 $neon-white, 0 0 0.5em 0 $neon-white;
+      position: relative;
+    }
+
+    .first-light {
+      transform: rotateX(-20deg) rotateY(20deg);
+    }
+
+    .second-light {
+      transform: rotateX(20deg) rotateY(20deg);
+    }
+    
+    .first-light::before,
+    .second-light::before {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      background: $neon-white;
+      top: 40rem;
+      left: 0;
+      width: 650%;
+      height: 100%;
+      border-radius:50%;
+      opacity: 0;
+    
+
+    }
+
+    .first-light::before {
+      left: 1.5rem;
+      transform: perspective(1em) rotateX(40deg) scale(1, 0.20) rotateZ(40deg);
+      filter: blur(1em);
+    }
+
+
+    .second-light::before {
+      right: 20px;
+      transform: perspective(1em) rotateX(40deg) scale(1, 0.20) rotateZ(-40deg);
+      filter: blur(1em);
+    }
+    
+    .first-light::after,
+    .second-light::after {
+      content: "";
+      position: absolute;
+      border-radius:50%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      box-shadow: 0 0 2em 0.5em $neon-white;
+      opacity: 0;
+      background-color: $neon-white;
+      transition: opacity 100ms linear;
+    }
+    
+    .first-light:hover,
+    .second-light:hover {
+      background-color: $neon-white;
+      color: #000;
+      text-shadow: none;
+      opacity: 1;
+      transition: opacity 500ms linear;
+    }
+    
+    .first-light:hover::before,
+    .second-light:hover::before {
+      opacity: 1;
+    }
+    .first-light:hover::after,
+    .second-light:hover::after {
+      opacity: 1;
+    }
+  }
+
+  // .content {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-around;
+  //   width: 100%;
+  //   color: white;
+  //   position: absolute;
+  //   bottom: 15rem;
+
+  //   .text-container {
+  //     font-size: 2rem;
+  //     width: 100%;
+  //     display: flex;
+  //     justify-content: space-around;
+  //     position: relative;
+  //     padding: 0 15rem;
+
+  //     .first-button,
+  //     .second-button {
+  //       text-align: center;
+  //       pointer-events: none;
+  //       display: inline-block;
+  //       position: relative;
+  //       border: $neon-white 0.125em solid;
+  //       border-radius: 1rem;
+  //       padding: 0.25em 1em;
+  //       width: 7em;
+  //     }
+  
+  //     .first-button::before,
+  //     .second-button::before {
+  //       content: "";
+  //       position: absolute;
+  //       background: $neon-white;
+  //       left: -9rem;
+  //       right: 0;
+  //       bottom: 0;
+  //       top: 130%;
+  //       width: 200%;
+  //       height: 100%;
+  //       border-radius:50%;
+      
+  //       transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  //       filter: blur(1em);
+  //       opacity: 1;
+  //     }
+  
+  //     .second-button::before {
+  //       left: unset;
+  //       right: -9rem;
+  //     }
+  //   }
+  // }
+}

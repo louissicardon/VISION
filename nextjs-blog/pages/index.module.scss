@@ -1,0 +1,68 @@
+$neon-white: #f7fff1;
+$neon-yellow: #f8f824;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+
+  .logo {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: #000;
+      top: 105%;
+      left: 10%;
+      width: 80%;
+      height: 50%;
+
+      transform: perspective(1rem) rotateX(20deg) scale(1, 0.25);
+      filter: blur(6rem);
+      opacity: 0.7;
+      animation-delay: 20000ms;
+      animation: 2s shadow-blink 2s forwards;
+
+    }
+
+    img {
+      position: relative;
+      animation-delay: 20000ms;
+      animation: 2s logo-blink 2s forwards;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .leave {
+    transform: scale(55);
+    transition: transform 2500ms;
+  }
+}
+
+@keyframes logo-blink {
+  5%, 15%, 25%, 30%, 40% {
+    filter: none;
+  }
+  
+  0%, 10%, 20%, 50%, 100% {
+    filter: 
+    drop-shadow(0 -0.30rem 0.30rem $neon-white);
+  }
+}
+
+@keyframes shadow-blink {
+  5%, 15%, 25%, 30%, 40% {
+    background-color: #000;
+  }
+  
+  0%, 10%, 20%, 50%, 100% {
+    background-color: $neon-white;
+  }
+}
