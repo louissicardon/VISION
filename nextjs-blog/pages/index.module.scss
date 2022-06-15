@@ -41,8 +41,18 @@ $neon-yellow: #f8f824;
   }
 
   .leave {
-    transform: scale(55);
-    transition: transform 2500ms;
+    // transform: scale(55);
+    // transition: transform 3000ms;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(300);
+    transition: transform 3000ms;
+    background:#fff;
+    line-height:100px;
+    vertical-align:middle;
+    text-align:center;
+    font-size:2em;
   }
 }
 

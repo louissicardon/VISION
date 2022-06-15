@@ -1,15 +1,11 @@
-// .showTitle {
-//   opacity: 1;
-//   transition: opacity 0 1500ms;
-// }
-.header {
-  width: 100%;
+.container {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  
-  .title {
+
+  .button:not(:last-child) {
+    margin-right: 32px;
+  }
+  .button {
     text-align: center;
     animation: 2s anim-lineUp ease-out;
   }
@@ -19,10 +15,10 @@
       opacity: 0;
       transform: translateY(80%);
     }
-    20% {
+    35% {
       opacity: 0;
     }
-    50% {
+    70% {
       opacity: 1;
       transform: translateY(0%);
     }

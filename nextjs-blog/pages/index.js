@@ -14,7 +14,7 @@ export default function LandingPage() {
 
   useEffect(() => {
     if (leaveLandingPage) {
-      const timeout = setTimeout(() => setShowHome(true), 2500);
+      const timeout = setTimeout(() => setShowHome(true), 1900);
       return () => {
         clearTimeout(timeout);
       };
@@ -26,7 +26,7 @@ export default function LandingPage() {
     <>
       {!showHome ? (
         <div className={styles.container}>
-          <div className={`${styles.logo} ${leaveLandingPage ? styles.leave : ''}`}>
+          <div className={`${leaveLandingPage ? styles.leave : styles.logo}`}>
             <img
               src={logo_black.src}
               height={288}
@@ -43,3 +43,25 @@ export default function LandingPage() {
     </>
   )
 }
+
+/** Zoom dans le cercle */
+// return (
+//   <>
+//     {!showHome ? (
+//       <div className={styles.container}>
+//         <div className={`${styles.logo} ${leaveLandingPage ? styles.leave : ''}`}>
+//           <img
+//             src={logo_black.src}
+//             height={288}
+//             width={288}
+//             alt="Vision"
+//             onClick={() => setLeaveLandingPage(true)}
+//           />
+//         </div>
+//       </div>
+//     ) : (
+//       <Home />
+//       // <Homev2 />
+//     )}
+//   </>
+// )
