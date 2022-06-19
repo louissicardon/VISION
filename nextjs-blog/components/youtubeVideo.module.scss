@@ -1,0 +1,10 @@
+.video-container {
+  display: flex;
+  justify-content: center;
+
+  iframe,
+  embed {
+    // width: 100% !important;
+    display: block;
+  }
+}

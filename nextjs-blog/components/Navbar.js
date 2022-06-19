@@ -3,12 +3,12 @@ import styles from './navbar.module.scss';
 export const Navbar = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.button}>Accueil</div>
-      <div className={styles.button}>Book</div>
-      <div className={styles.button}>Voyages</div>
-      <div className={styles.button}>Fiction</div>
-      <div className={styles.button}>Videos</div>
-      <div className={styles.button}>Rap</div>
+      <div className={styles.button}>ACCUEIL</div>
+      <div className={styles.button}>BOOK</div>
+      <div className={styles.button}>VOYAGE</div>
+      <div className={styles.button}>FICTION</div>
+      <div className={styles.button}>VIDEOS</div>
+      <div className={styles.button}>RAP</div>
     </div>
   )
 };

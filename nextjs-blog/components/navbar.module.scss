@@ -7,24 +7,24 @@
   }
   .button {
     text-align: center;
-    animation: 2s anim-lineUp ease-out;
+    animation: 3s anim-lineUp ease-out;
   }
 
   @keyframes anim-lineUp {
     0% {
       opacity: 0;
-      transform: translateY(80%);
+      // transform: translateY(80%);
     }
-    35% {
+    15% {
       opacity: 0;
     }
-    70% {
+    65% {
       opacity: 1;
-      transform: translateY(0%);
+      // transform: translateY(0%);
     }
     100% {
       opacity: 1;
-      transform: translateY(0%);
+      // transform: translateY(0%);
     }
   }
 }
