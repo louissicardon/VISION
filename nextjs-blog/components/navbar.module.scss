@@ -8,6 +8,8 @@
   .button {
     text-align: center;
     animation: 3s anim-lineUp ease-out;
+    text-decoration: none;
+    color: #000;
   }
 
   @keyframes anim-lineUp {

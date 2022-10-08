@@ -1,0 +1,34 @@
+.header {
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 128px;
+  flex-direction: column;
+
+  .title {
+    text-align: center;
+    margin-bottom: 32px;
+    animation: 3s anim-title ease-out;
+  }
+
+}
+
+.logo {
+  position: absolute;
+  margin-top: 23px;
+  left: 48px
+}
+
+@keyframes anim-title {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

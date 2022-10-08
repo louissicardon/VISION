@@ -1,0 +1,31 @@
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .video-container {
+    
+    margin-bottom: 128px;
+    // .phone {
+    //   z-index: 1;
+    // }
+    .video {
+      display: flex;
+      justify-content: center;
+      // position: absolute;
+      // z-index: 0;
+      // background-image: '../public/image/phone.png'; 
+    }
+  }
+  
+  .prestations-container {
+    display: flex;
+    justify-content: center;
+  }
+}

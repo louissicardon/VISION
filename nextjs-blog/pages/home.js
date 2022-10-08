@@ -1,33 +1,25 @@
-import Navbar from '../components/Navbar';
-
 import YoutubeVideo from '../components/YoutubeVideo';
-import logo_black from '../public/images/vision-black.svg';
+import Header from '../components/Header';
 
-import styles from './homev2.module.scss';
+import styles from './home.module.scss';
+import Prestations from '../components/Prestations';
 
 export const Home = () => {
   return (
     <div>
-      <div className={styles.header}>
-        <img
-          src={logo_black.src}
-          height={53}
-          width={53}
-          alt="Vision"
-          className={styles.logo}
-          // onClick={() => setLeaveLandingPage(true)}
-        />
-        <h1 className={styles.title}>VISION DE GVMS</h1>
-      </div>
-      <Navbar/>
+      <Header/>
       <div className={styles.content}>
         <div className={styles.video}>
           <YoutubeVideo
-            videoId={'y8GrS3bY8_o'}
+            src={'assets/videos/V_NewWorld.mp4'}
+            playing={true}
+            width={750}
+            height={422}
           />
         </div>
         <div className={styles['text-container']}>
           {/* <p>{HOME_TEXT}</p> */}
+          <p className={styles.title}>MON HISTOIRE</p>
           <div className={styles.text}>
             <p>
               Salut à tous c’est GVMS, et bienvenue sur VISION.
@@ -66,6 +58,10 @@ export const Home = () => {
               Merci de m’avoir écouté, je vous souhaite beaucoup de réussites dans tout ce que vous entreprenez et j’ai hâte de travailler avec vous. 🤝
             </p>
           </div>
+        </div>
+        <div className={styles.prestation}>
+
+          <Prestations/>
         </div>
       </div>
     </div>

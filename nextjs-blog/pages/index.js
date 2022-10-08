@@ -1,11 +1,11 @@
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 import logo_black from '../public/images/vision-black.svg';
 import logo_white from '../public/images/vision-white.svg';
-
+import { PAGES } from '../constants/pages';
 
 import styles from './index.module.scss';
-import { useRouter } from 'next/router';
 
 export default function LandingPage() {
   const [leaveLandingPage, setLeaveLandingPage] = useState(false);
@@ -14,7 +14,7 @@ export default function LandingPage() {
 
   useEffect(() => {
     if (leaveLandingPage) {
-      const timeout = setTimeout(() => router.push('/home'), 1900);
+      const timeout = setTimeout(() => router.push(PAGES.HOME), 1900);
       return () => {
         clearTimeout(timeout);
       };
