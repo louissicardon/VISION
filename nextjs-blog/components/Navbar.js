@@ -6,6 +6,11 @@ import styles from './navbar.module.scss';
 export const Navbar = () => {
   return (
     <div className={styles.container}>
+      <Link href={PAGES.HOME}>
+        <a className={styles.button}>
+          ACCUEIL
+        </a>
+      </Link>
       <div className={styles.button}>BOOK</div>
       <div className={styles.button}>VOYAGE</div>
       <div className={styles.button}>FICTION</div>

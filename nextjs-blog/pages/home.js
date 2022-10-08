@@ -17,6 +17,15 @@ export const Home = () => {
             height={422}
           />
         </div>
+        <div className={styles.definition}>
+          <div>
+            <p className={styles['text-23px']}>Vision (n.f.) :<br/></p>
+            <p>&emsp;1. Perception visuelle un monde extérieur.<br/>
+            &emsp;2. Conception personelle de quelque chose, manière de voir.<br/>
+            &emsp;3. Hallucination, perception surnaturelle.</p>
+            <p className={styles['text-23px']}>Avoir une vision, c'est se projeter dans le futur et avoir un impact sur sa destinée. 💫</p>
+          </div>
+        </div>
         <div className={styles['text-container']}>
           {/* <p>{HOME_TEXT}</p> */}
           <p className={styles.title}>MON HISTOIRE</p>

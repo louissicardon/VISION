@@ -1,8 +1,6 @@
-import Carousel from '../components/Carousel';
 import Header from '../components/Header';
 import YoutubeVideo from '../components/YoutubeVideo';
 import phone_img from '../public/images/phone.png';
-import Prestations from '../components/Prestations'
 
 import styles from './gvms.module.scss'
 
@@ -20,12 +18,8 @@ export const gvms = () => {
         <div className={styles['video-container']}>
           {/* <img className={styles.phone} src={phone_img.src}></img> */}
           <div className={styles.video}>
-            <YoutubeVideo src={'https://www.youtube.com/watch?v=yi1i-4wxv_Q'} width={750} height={422}/>
+            <YoutubeVideo src={'https://www.youtube.com/shorts/Z7PfDEoTiiQ'} width={540} height={960}/>
           </div>
-        </div>
-        <div className={styles['prestations-container']}>
-          {/* <Carousel /> */}
-          <Prestations />
         </div>
       </div>
     </div>
