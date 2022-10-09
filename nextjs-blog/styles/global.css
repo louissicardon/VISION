@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 
+@font-face {
+  font-family: "Myriad-Pro-Regular";
+  src: url('../public/font/MYRIADPRO-REGULAR.OTF');
+}
+
+@font-face {
+  font-family: "Myriad-Pro-Condensed";
+  src: url('../public/font/MYRIADPRO-COND.OTF');
+}
+
+@font-face {
+  font-family: "Myriad-Pro-Bold-Condensed";
+  src: url('../public/font/MYRIADPRO-BOLDCOND.OTF');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: myriad-pro-condensed, sans-serif;
+  font-family: Myriad-Pro-Condensed;
   font-weight: 700;
   font-style: normal;
   font-size: 18px;

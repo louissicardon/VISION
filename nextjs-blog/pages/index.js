@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 import logo_black from '../public/images/vision-black.svg';
 import logo_white from '../public/images/vision-white.svg';
-import logo_oeil from '../public/images/vision-black-svg.png';
+import logo_oeil from '../public/images/vision-black-oeil.png';
 import { PAGES } from '../constants/pages';
 
 import styles from './index.module.scss';
@@ -30,7 +30,7 @@ export default function LandingPage() {
           <img
             src={logo_oeil.src}
             height={288}
-            width={288}
+            width={517}
             alt="Vision"
             onClick={() => setLeaveLandingPage(true)}
           />

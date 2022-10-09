@@ -1,3 +1,17 @@
+.container {
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: center;
+
+  .title {
+    margin: 0;
+    animation: 3s anim-title ease-out;
+    font-family: Myriad-Pro-Bold-Condensed;
+  }
+}
+
 .header {
   top: 0;
   width: 100%;
@@ -7,18 +21,7 @@
   margin-bottom: 64px;
   flex-direction: column;
 
-  .title {
-    text-align: center;
-    margin-bottom: 32px;
-    animation: 3s anim-title ease-out;
-  }
 
-}
-
-.logo {
-  position: absolute;
-  margin-top: 23px;
-  left: 48px
 }
 
 @keyframes anim-title {

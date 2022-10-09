@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     margin-top: 64px;
-    animation: 3s anim-text ease-out;
+    animation: 3s anim-title ease-out;
 
     .text-23px {
       font-size: 23px;
@@ -24,6 +24,7 @@
   .text {
     font-weight: 300;
     animation: 3s anim-text ease-out;
+    font-family: Myriad-Pro-Regular;
   }
   
 
@@ -40,7 +41,7 @@
       text-align: center;
       font-size: 32px;
       margin-bottom: 64px;
-      animation: 3s anim-title ease-out;
+      animation: 3s anim-text ease-out;
     }
 
     .text {

@@ -11,16 +11,16 @@ export const Navbar = () => {
           ACCUEIL
         </a>
       </Link>
-      <div className={styles.button}>BOOK</div>
-      <div className={styles.button}>VOYAGE</div>
-      <div className={styles.button}>FICTION</div>
-      <div className={styles.button}>VIDEOS</div>
-      <div className={styles.button}>RAP</div>
       <Link href={PAGES.GVMS}>
         <a className={styles.button}>
           GVMS
         </a>
       </Link>
+      <div className={styles.button}>VOYAGES</div>
+      <div className={styles.button}>VIDEOS</div>
+      <div className={styles.button}>FICTION</div>
+      <div className={styles.button}>RAP</div>
+      <div className={styles.button}>CONTACT</div>
     </div>
   )
 };

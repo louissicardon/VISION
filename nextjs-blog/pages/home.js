@@ -10,12 +10,12 @@ export const Home = () => {
       <Header/>
       <div className={styles.content}>
         <div className={styles.video}>
-          {/* <YoutubeVideo
-            src={'assets/videos/V_NewWorld.mp4'}
+          <YoutubeVideo
+            src={'https://www.youtube.com/watch?v=zKVRzkg1dqA'}
             playing={true}
             width={750}
             height={422}
-          /> */}
+          />
         </div>
         <div className={styles.definition}>
           <div>
