@@ -4,10 +4,10 @@
   align-items: center;
   justify-content: space-between;
   vertical-align: center;
+  animation: 3s anim-title ease-out;
 
   .title {
     margin: 0;
-    animation: 3s anim-title ease-out;
     font-family: Myriad-Pro-Bold-Condensed;
   }
 }
