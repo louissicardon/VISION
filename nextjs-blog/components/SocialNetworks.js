@@ -7,7 +7,7 @@ import styles from './socialNetworks.module.scss';
 export const SocialNetworks = () => {
   return (
     <div className={styles.container}>
-      <a href='https://www.instagram.com/visiondegvms/' target={'_blank'}>
+      <a href='https://www.instagram.com/visiondegvms/' target={'_blank'} className={styles.link}>
         <img
           src={insta.src}
           height={32}
@@ -15,19 +15,19 @@ export const SocialNetworks = () => {
           alt="Instagram"
         />
       </a>
-      <a href='https://www.youtube.com/channel/UClKRcDCcnXV25lRM-7ddruA' target={'_blank'}>
+      <a href='https://www.youtube.com/channel/UClKRcDCcnXV25lRM-7ddruA' target={'_blank'} className={styles.link}>
         <img
           src={youtube.src}
-          height={32}
-          width={32}
+          height={36}
+          width={36}
           alt="Youtube"
         />
       </a>
-      <a href='https://www.tiktok.com/@visiondegvms' target={'_blank'}>
+      <a href='https://www.tiktok.com/@visiondegvms' target={'_blank'} className={styles.link}>
         <img
           src={tiktok.src}
-          height={28} // TODO: prendre un meilleur logo pour eviter mauvaise taille
-          width={28}
+          height={26} // TODO: prendre un meilleur logo pour eviter mauvaise taille
+          width={26}
           alt="Tiktok"
         />
       </a>

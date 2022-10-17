@@ -5,10 +5,9 @@ import phone_img from '../public/images/phone.png';
 import styles from './gvms.module.scss'
 
 export const gvms = () => {
-
   return (
     <div>
-      <Header />
+      <Header /> 
       <div className={styles.content}>
         <div className={styles.title}>
           <p>

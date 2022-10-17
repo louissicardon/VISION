@@ -2,4 +2,8 @@
   display: flex;
   align-items: center;
   gap: 16px;
+
+  .link:hover {
+    transform: scale(1.15);
+  }
 }

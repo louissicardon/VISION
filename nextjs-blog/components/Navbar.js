@@ -16,7 +16,11 @@ export const Navbar = () => {
           GVMS
         </a>
       </Link>
-      <div className={styles.button}>VOYAGES</div>
+      <Link href={PAGES.VOYAGES}>
+        <a className={styles.button}>
+          VOYAGES
+        </a>
+      </Link>
       <div className={styles.button}>VIDEOS</div>
       <div className={styles.button}>FICTION</div>
       <div className={styles.button}>RAP</div>

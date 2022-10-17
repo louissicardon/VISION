@@ -1,13 +1,13 @@
 import YoutubeVideo from '../components/YoutubeVideo';
-import Header from '../components/Header';
 
 import styles from './home.module.scss';
 import Prestations from '../components/Prestations';
+import Header from '../components/Header';
 
 export const Home = () => {
   return (
     <div>
-      <Header/>
+      <Header /> 
       <div className={styles.content}>
         <div className={styles.video}>
           <YoutubeVideo

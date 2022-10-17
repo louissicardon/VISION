@@ -1,5 +1,6 @@
 export const PAGES = {
   LANDING: '/',
   HOME: '/home',
-  GVMS: '/gvms'
+  GVMS: '/gvms',
+  VOYAGES: '/voyages'
 }
